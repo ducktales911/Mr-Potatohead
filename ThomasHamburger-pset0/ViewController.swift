@@ -22,6 +22,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var shoes: UIImageView!
     
     @IBOutlet weak var ArmsSwitch: UISwitch!
+    @IBOutlet weak var EarsSwitch: UISwitch!
+    @IBOutlet weak var EyebrowsSwitch: UISwitch!
+    @IBOutlet weak var EyesSwitch: UISwitch!
+    @IBOutlet weak var GlassesSwitch: UISwitch!
+    @IBOutlet weak var HatSwitch: UISwitch!
+    @IBOutlet weak var MouthSwitch: UISwitch!
+    @IBOutlet weak var MustacheSwitch: UISwitch!
+    @IBOutlet weak var NoseSwitch: UISwitch!
+    @IBOutlet weak var ShoesSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,31 +49,31 @@ class ViewController: UIViewController {
         }
         
         if (sender.tag == 1) {
-            ears.hidden = true
+            ears.hidden = (!EarsSwitch.on)
         }
         if (sender.tag == 2) {
-            eyebrows.hidden = true
+            eyebrows.hidden = (!EyebrowsSwitch.on)
         }
         if (sender.tag == 3) {
-            eyes.hidden = true
+            eyes.hidden = (!EyesSwitch.on)
         }
         if (sender.tag == 4) {
-            glasses.hidden = true
+            glasses.hidden = (GlassesSwitch.on)
         }
         if (sender.tag == 5) {
-            hat.hidden = true
+            hat.hidden = (!HatSwitch.on)
         }
         if (sender.tag == 6) {
-            mouth.hidden = true
+            mouth.hidden = (!MouthSwitch.on)
         }
         if (sender.tag == 7) {
-            mustache.hidden = true
+            mustache.hidden = (!MustacheSwitch.on)
         }
         if (sender.tag == 8) {
-            nose.hidden = true
+            nose.hidden = (!NoseSwitch.on)
         }
         if (sender.tag == 9) {
-            shoes.hidden = true
+            shoes.hidden = (!ShoesSwitch.on)
         }
     }
     
