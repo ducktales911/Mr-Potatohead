@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E99FE0C11CBE8784004761B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FE0C01CBE8784004761B3 /* AppDelegate.swift */; };
 		E99FE0C31CBE8784004761B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FE0C21CBE8784004761B3 /* ViewController.swift */; };
-		E99FE0C61CBE8784004761B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99FE0C41CBE8784004761B3 /* Main.storyboard */; };
+		E99FE0C61CBE8784004761B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99FE0C41CBE8784004761B3 /* Main.storyboard */; settings = {ASSET_TAGS = (arms, ); }; };
 		E99FE0C81CBE8784004761B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99FE0C71CBE8784004761B3 /* Assets.xcassets */; };
 		E99FE0CB1CBE8784004761B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99FE0C91CBE8784004761B3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -161,6 +161,9 @@
 		E99FE0B51CBE8784004761B3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					arms,
+				);
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = ThomasHamburger;
@@ -459,6 +462,7 @@
 				E99FE0E71CBE8784004761B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E99FE0E81CBE8784004761B3 /* Build configuration list for PBXNativeTarget "ThomasHamburger-pset0Tests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +471,7 @@
 				E99FE0EA1CBE8784004761B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E99FE0EB1CBE8784004761B3 /* Build configuration list for PBXNativeTarget "ThomasHamburger-pset0UITests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +480,7 @@
 				E99FE0ED1CBE8784004761B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
