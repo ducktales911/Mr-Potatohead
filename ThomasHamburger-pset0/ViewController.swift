@@ -44,10 +44,10 @@ class ViewController: UIViewController {
 
     
     @IBAction func SwitchMe(sender: AnyObject) {
+        // Hides or shows images based on their switches.
         if (sender.tag == 0) {
             arms.hidden = (!ArmsSwitch.on)
         }
-        
         if (sender.tag == 1) {
             ears.hidden = (!EarsSwitch.on)
         }
