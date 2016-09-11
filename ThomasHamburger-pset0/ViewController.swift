@@ -58,7 +58,7 @@ class ViewController: UIViewController {
             eyes.hidden = (!EyesSwitch.on)
         }
         if (sender.tag == 4) {
-            glasses.hidden = (GlassesSwitch.on)
+            glasses.hidden = (!GlassesSwitch.on)
         }
         if (sender.tag == 5) {
             hat.hidden = (!HatSwitch.on)
