@@ -41,43 +41,32 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
-    @IBAction func SwitchMe(sender: AnyObject) {
+    @IBAction func SwitchMe(_ sender: AnyObject) {
         // Hides or shows images based on their switches.
-        if (sender.tag == 0) {
-            arms.hidden = (!ArmsSwitch.on)
-        }
-        if (sender.tag == 1) {
-            ears.hidden = (!EarsSwitch.on)
-        }
-        if (sender.tag == 2) {
-            eyebrows.hidden = (!EyebrowsSwitch.on)
-        }
-        if (sender.tag == 3) {
-            eyes.hidden = (!EyesSwitch.on)
-        }
-        if (sender.tag == 4) {
-            glasses.hidden = (!GlassesSwitch.on)
-        }
-        if (sender.tag == 5) {
-            hat.hidden = (!HatSwitch.on)
-        }
-        if (sender.tag == 6) {
-            mouth.hidden = (!MouthSwitch.on)
-        }
-        if (sender.tag == 7) {
-            mustache.hidden = (!MustacheSwitch.on)
-        }
-        if (sender.tag == 8) {
-            nose.hidden = (!NoseSwitch.on)
-        }
-        if (sender.tag == 9) {
-            shoes.hidden = (!ShoesSwitch.on)
+        switch sender.tag {
+        case 0 :
+            arms.isHidden = !ArmsSwitch.isOn
+        case 1 :
+            ears.isHidden = !EarsSwitch.isOn
+        case 2:
+            eyebrows.isHidden = !EyebrowsSwitch.isOn
+        case 3:
+            eyes.isHidden = !EyesSwitch.isOn
+        case 4:
+            glasses.isHidden = !GlassesSwitch.isOn
+        case 5:
+            hat.isHidden = !HatSwitch.isOn
+        case 6:
+            mouth.isHidden = !MouthSwitch.isOn
+        case 7:
+            mustache.isHidden = !MustacheSwitch.isOn
+        case 8:
+            nose.isHidden = !NoseSwitch.isOn
+        case 9:
+            shoes.isHidden = !ShoesSwitch.isOn
+        default :
+            print("Error: switch action not specified")
         }
     }
-    
-    
-    
 }
-
